@@ -89,5 +89,34 @@ console.log(frutas);
 console.log(frutas[1].nome);
 
 
+//Aula 03: Condicionais, laços de repetição e Date
+/*
+var idade = prompt("Qual sua idade?");
+if (idade >= 18) {
+    console.log("Maior de Idade");
+} else {
+    console.log("menor de idade");
+};
+
+var x = 0;
+while (x <= 5) {
+    console.log(x);
+    x = x + 1;
+};
+
+
+
+for (var y = 0; y <= 5; y++) {
+    console.log(y);
+}
+*/
+
+var d = new Date();
+
+console.log(d.getMonth());
+console.log(d.getDay() + 10);
+console.log(d.getHours());
+console.log(d.getMinutes());
+
 
 
