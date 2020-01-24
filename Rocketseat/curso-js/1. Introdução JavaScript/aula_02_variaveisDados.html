@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+        //Aula 02: Variáveis e Dados:
+
+        //String:
+        var nome = "Gustavo";
+
+        //Inteiro
+        var idade = 29;
+
+        // Float
+        var peso = 79.5;
+
+        //Boolean
+        var humano = true;
+
+        //Vetores:
+        var alunos = ['Gustavo', 'Leonardo', 'Leandro'];
+
+        //Acessando os Vetores:
+        //console.log(alunos[x]);
+        //Onde x: 0-> Gustavo; 1->Leonardo e 2->Leandro
+
+        // Objetos:
+        var aluno = {
+            nome: 'Gabriel',
+            idade: 29,
+            peso: 79.5,
+            humano: true
+        };
+
+        //Acessando os elementos dos Objetos:
+
+        console.log(aluno.nome);
+        console.log(aluno.idade);
+        console.log(aluno.peso);
+        console.log(aluno.humano);
+
+        //Os objetos podem acessar outra variavel:
+        var aluno = {
+            nome: alunos[0],
+            idade: 29,
+            peso: 79.5,
+            humano: true
+        };
+
+        console.log(aluno);
+
+    </script>
+</body>
+
+</html>

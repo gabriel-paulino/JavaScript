@@ -1,0 +1,10 @@
+//Transforma as features es6 em uma forma que todos os navegadores entendam
+//Configura o babel para trabalhar em navegadores de internet
+{
+    "presets": [
+        "@babel/preset-env"
+    ],
+    "plugins": [
+        "@babel/plugin-proposal-object-rest-spread"
+    ]
+}

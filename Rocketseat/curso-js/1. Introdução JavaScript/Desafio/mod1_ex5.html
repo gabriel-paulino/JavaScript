@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+
+        function listarUsuarios(users) {
+
+            for (let user of users) {
+                console.log("O " + user.nome + " possui as habilidades: " + user.habilidades.join(', '));
+            }
+
+        }
+
+        var usuarios = [
+            {
+                //objeto 1
+                nome: "Diego",
+                habilidades: ["Javascript", "ReactJS", "Redux"]
+            },
+            {
+                //objeto 2
+                nome: "Gabriel",
+                habilidades: ["VueJS", "Ruby on Rails", "Elixir"]
+            },
+            {
+                //objeto 3
+                nome: "Leonardo",
+                habilidades: ["HTML", "Javascript", "SQL"]
+            },
+            {
+                //objeto 4
+                nome: "Bianca",
+                habilidades: ["Java", "Spring", "Maven"]
+            }
+        ];
+
+        listarUsuarios(usuarios)
+
+    </script>
+
+</body>
+
+</html>

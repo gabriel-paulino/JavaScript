@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div id="app">
+        <input type="text" name="nome" id="nome" class="nome">
+        <input type="text" name="nome" id="nome2">
+        <button class="botao">Adicionar</button>
+    </div>
+
+
+    <script>
+
+        // Busca de elementos por id
+        var inputElement0 = document.getElementById('nome');
+        //console.log(inputElement0);
+
+        // Busca de elementos por TAG
+        //Armazena os elementos da mesma TAG em uma Array: 
+        //HTML Collection - Os indices sao ordenados de acordo com a estrutura
+        var inputElement1 = document.getElementsByTagName('input');
+        //console.log(inputElement1);
+
+        // Busca de elementos por nome de Classe
+        //Armazena os elementos da classe em uma Array: 
+        //HTML Collection - Os indices sao ordenados de acordo com a estrutura
+        var inputElement2 = document.getElementsByClassName('nome');
+        //console.log(inputElement2);
+
+        //Buscando elementos por querySelector
+        //Retorna apenas um unico elemento
+        //Este método percorre toda estrutura HTML
+        //Forncecendo um "caminho" para o elemento desejado.
+        //Elemento esta em body, dentro da div com id app, sendo ele o input.
+
+        var inputElement3 = document.querySelector('body div#app input');
+        //console.log(inputElement3);
+
+        //Retorna o primeiro elemento input que possui o atributo name = nome
+        var inputElement4 = document.querySelector('input[name=nome]');
+        console.log(inputElement4);
+
+        //Retorna todos os elementos inputs
+        var inputElement5 = document.querySelectorAll('input');
+        console.log(inputElement5);
+
+
+        //Criando uma função para exibir um alerta
+        //com a mensagem escrita no input com name=nome
+        //ao clicar o botão Adicionar no doc. HTML
+
+        var inputElement6 = document.querySelector('input[name=nome');
+
+        var btnElement = document.querySelector('button.botao')
+
+        btnElement.onclick = function () {
+            var texto = inputElement6.value;
+
+            alert(texto);
+        }
+
+
+
+    </script>
+</body>
+
+</html>

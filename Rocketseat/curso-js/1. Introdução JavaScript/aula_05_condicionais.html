@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+
+        //If
+        function retornaSexo(sexo) {
+
+            if (sexo === 'M') {
+                return ("Masculino");
+            } else if (sexo === 'F') {
+                return ("Feminino");
+            }
+            else {
+                return ("Outro");
+            }
+        }
+
+        var resultado = retornaSexo('F');
+        console.log(resultado);
+
+        // A comparação com ===, verifica também o tipo de dado
+        if (1 == '1') {
+            console.log("1 = '1'");
+        } if (1 === '1') {
+            console.log('True');
+        } else {
+            console.log("1 != '1'");
+        }
+
+        //Switch case:
+
+        function retornaSexo2(sexo) {
+            switch (sexo) {
+                case 'M':
+                    return 'Masculino';
+                case 'F':
+                    return 'Feminino';
+                default:
+                    return 'Outro';
+            }
+        }
+
+        var resultado2 = retornaSexo2('R');
+        console.log(resultado2);
+
+
+
+    </script>
+
+</body>
+
+</html>

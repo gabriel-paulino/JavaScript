@@ -1,2 +1,2 @@
-#JavaScript
-Introdução ao javascript
+﻿# JavaScript
+Estudo da Linguagem Javascript
