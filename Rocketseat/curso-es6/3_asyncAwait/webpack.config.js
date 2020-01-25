@@ -1,7 +1,7 @@
 //Arquivo de configuração do webpack
 
 module.exports = {
-    entry: './src/main.js', //Arquivo principal (aquele que vc escreve o código)
+    entry: ['@babel/polyfill', './src/main.js'], //Arquivo principal (aquele que vc escreve o código)
     output: { // Para qual lugar e arquivo devo enviar o arquivo convertido
         path: __dirname + '/public', //__dirname refere-se à uma variavel global que indica a raiz da pasta
         filename: 'bundle.js', //nome do arquivo
